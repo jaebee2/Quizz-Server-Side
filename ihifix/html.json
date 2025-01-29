@@ -1,0 +1,138 @@
+[
+    {
+      "question": "Which HTML tag is used to define a table row?",
+      "answers": [
+        { "text": "<tr>", "correct": true },
+        { "text": "<td>", "correct": false },
+        { "text": "<th>", "correct": false },
+        { "text": "<row>", "correct": false }
+      ]
+    },
+    {
+      "question": "What does the 'z-index' property in CSS control?",
+      "answers": [
+        { "text": "The stack order of elements", "correct": true },
+        { "text": "The size of an element", "correct": false },
+        { "text": "The visibility of an element", "correct": false },
+        { "text": "The spacing between elements", "correct": false }
+      ]
+    },
+    {
+      "question": "Which HTML attribute is used to specify an alternate text for an image?",
+      "answers": [
+        { "text": "alt", "correct": true },
+        { "text": "src", "correct": false },
+        { "text": "title", "correct": false },
+        { "text": "description", "correct": false }
+      ]
+    },
+    {
+        "question": "Which HTML attribute specifies the destination of a link?",
+        "answers": [
+          { "text": "href", "correct": true },
+          { "text": "src", "correct": false },
+          { "text": "link", "correct": false },
+          { "text": "url", "correct": false }
+        ]
+      },
+    {
+      "question": "Which CSS property is used to change the font of an element?",
+      "answers": [
+        { "text": "font-family", "correct": true },
+        { "text": "font-style", "correct": false },
+        { "text": "text-font", "correct": false },
+        { "text": "font", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you create a checkbox in HTML?",
+      "answers": [
+        { "text": "<input type='checkbox'>", "correct": true },
+        { "text": "<checkbox>", "correct": false },
+        { "text": "<input checkbox='true'>", "correct": false },
+        { "text": "<input type='box'>", "correct": false }
+      ]
+    },
+    {
+      "question": "Which CSS property is used to create space between an element’s border and its content?",
+      "answers": [
+        { "text": "padding", "correct": true },
+        { "text": "margin", "correct": false },
+        { "text": "border-spacing", "correct": false },
+        { "text": "content-spacing", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'relative' and 'absolute' positioning in CSS?",
+      "answers": [
+        { "text": "'relative' positions the element relative to its normal position, 'absolute' positions it relative to the nearest positioned ancestor.", "correct": true },
+        { "text": "'absolute' positions the element based on the viewport, 'relative' uses the nearest parent element.", "correct": false },
+        { "text": "'relative' hides the element, while 'absolute' makes it float.", "correct": false },
+        { "text": "'relative' and 'absolute' have the same effect.", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the <meta> tag in HTML?",
+      "answers": [
+        { "text": "To define metadata such as character set, viewport settings, and SEO information.", "correct": true },
+        { "text": "To add scripts to the page.", "correct": false },
+        { "text": "To link CSS files.", "correct": false },
+        { "text": "To create a header section.", "correct": false }
+      ]
+    },
+    {
+      "question": "Which pseudo-class is used to style an element when the user hovers over it?",
+      "answers": [
+        { "text": ":hover", "correct": true },
+        { "text": ":focus", "correct": false },
+        { "text": ":active", "correct": false },
+        { "text": ":link", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is used to make a list with bullet points in HTML?",
+      "answers": [
+        { "text": "<ul>", "correct": true },
+        { "text": "<ol>", "correct": false },
+        { "text": "<li>", "correct": false },
+        { "text": "<list>", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you create a responsive layout in CSS?",
+      "answers": [
+        { "text": "Using grid, media queries and flex", "correct": true },
+        { "text": "Using inline styles and flex", "correct": false },
+        { "text": "Using absolute positioning", "correct": false },
+        { "text": "Using <responsive> tags in HTML", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the purpose of the 'float' property in CSS?",
+      "answers": [
+        { "text": "To position elements to the left or right within their container", "correct": true },
+        { "text": "To make an element responsive", "correct": false },
+        { "text": "To add padding to an element", "correct": false },
+        { "text": "To set the stacking order of elements", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the difference between 'id' and 'class' attributes in HTML?",
+      "answers": [
+        { "text": "'id' is unique to an element, while 'class' can be shared among multiple elements.", "correct": true },
+        { "text": "'id' is used for styling, while 'class' is used for scripts.", "correct": false },
+        { "text": "'id' is for HTML, while 'class' is for CSS.", "correct": false },
+        { "text": "'id' is only for inline elements, while 'class' is for block elements.", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you define a grid container in CSS?",
+      "answers": [
+        { "text": "display: grid;", "correct": true },
+        { "text": "grid: display;", "correct": false },
+        { "text": "container: grid;", "correct": false },
+        { "text": "display: grid-container;", "correct": false }
+      ]
+    }
+  ]
+  
