@@ -201,6 +201,186 @@
     ]
   },
   {
+    "question": "What will be the output of the following code?\n\nconsole.log(typeof null);",
+    "answers": [
+      { "text": "'object'", "correct": true },
+      { "text": "'null'", "correct": false },
+      { "text": "'undefined'", "correct": false },
+      { "text": "'string'", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you check if a variable is an array in JavaScript?",
+    "answers": [
+      { "text": "Array.isArray(variable)", "correct": true },
+      { "text": "typeof variable === 'array'", "correct": false },
+      { "text": "variable instanceof Object", "correct": false },
+      { "text": "variable.constructor === 'Array'", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be logged in the console?\n\nlet x = 10;\ndelete x;\nconsole.log(x);",
+    "answers": [
+      { "text": "10", "correct": true },
+      { "text": "undefined", "correct": false },
+      { "text": "ReferenceError", "correct": false },
+      { "text": "null", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is a correct way to declare a function in JavaScript?",
+    "answers": [
+      { "text": "function myFunction() {}", "correct": true },
+      { "text": "def myFunction() {}", "correct": false },
+      { "text": "func myFunction() {}", "correct": false },
+      { "text": "myFunction := function() {}", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following correctly reverses a string in JavaScript?",
+    "answers": [
+      { "text": "str.split('').reverse().join('')", "correct": true },
+      { "text": "str.reverse()", "correct": false },
+      { "text": "reverse(str)", "correct": false },
+      { "text": "str[::-1]", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the 'this' keyword in JavaScript?",
+    "answers": [
+      { "text": "Refers to the current object context", "correct": true },
+      { "text": "Creates a new variable", "correct": false },
+      { "text": "Declares a function", "correct": false },
+      { "text": "Points to the global window object always", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the '===' operator do in JavaScript?",
+    "answers": [
+      { "text": "Compares both value and type", "correct": true },
+      { "text": "Compares only values", "correct": false },
+      { "text": "Assigns a value", "correct": false },
+      { "text": "Performs a bitwise operation", "correct": false }
+    ]
+  },
+  {
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "answers": [
+      { "text": "JSON.parse()", "correct": true },
+      { "text": "JSON.stringify()", "correct": false },
+      { "text": "JSON.toObject()", "correct": false },
+      { "text": "JSON.objectify()", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be the output of this code?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+    "answers": [
+      { "text": "false", "correct": true },
+      { "text": "true", "correct": false },
+      { "text": "undefined", "correct": false },
+      { "text": "NaN", "correct": false }
+    ]
+  },
+  {
+    "question": "Which JavaScript feature allows function calls before function declarations?",
+    "answers": [
+      { "text": "Hoisting", "correct": true },
+      { "text": "Closure", "correct": false },
+      { "text": "Lexical Scoping", "correct": false },
+      { "text": "Currying", "correct": false }
+    ]
+  },
+  {
+    "question": "Which command is used to install Express in a Node.js project?",
+    "answers": [
+      { "text": "npm install express", "correct": true },
+      { "text": "node install express", "correct": false },
+      { "text": "install express", "correct": false },
+      { "text": "express init", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the correct way to import Express in a Node.js file?",
+    "answers": [
+      { "text": "const express = require('express');", "correct": true },
+      { "text": "import express from 'express';", "correct": false },
+      { "text": "require express;", "correct": false },
+      { "text": "include('express')", "correct": false }
+    ]
+  },
+  {
+    "question": "Which method is used to define a GET route in Express?",
+    "answers": [
+      { "text": "app.get('/', (req, res) => { res.send('Hello World'); })", "correct": true },
+      { "text": "app.route('/', (req, res) => { res.send('Hello World'); })", "correct": false },
+      { "text": "app.request('/', (req, res) => { res.send('Hello World'); })", "correct": false },
+      { "text": "app.fetch('/', (req, res) => { res.send('Hello World'); })", "correct": false }
+    ]
+  },
+  {
+    "question": "Which Express method is used to start the server on a specific port?",
+    "answers": [
+      { "text": "app.listen(3000, () => { console.log('Server running'); });", "correct": true },
+      { "text": "app.start(3000);", "correct": false },
+      { "text": "app.run(3000);", "correct": false },
+      { "text": "app.open(3000);", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you send a JSON response in an Express route?",
+    "answers": [
+      { "text": "res.json({ message: 'Hello, World!' })", "correct": true },
+      { "text": "res.send.json({ message: 'Hello, World!' })", "correct": false },
+      { "text": "res.writeJson({ message: 'Hello, World!' })", "correct": false },
+      { "text": "res.sendJSON({ message: 'Hello, World!' })", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTTP method is used to retrieve data from a server?",
+    "answers": [
+      { "text": "GET", "correct": true },
+      { "text": "POST", "correct": false },
+      { "text": "PUT", "correct": false },
+      { "text": "DELETE", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTTP method is used to submit data to be processed by a server?",
+    "answers": [
+      { "text": "POST", "correct": true },
+      { "text": "GET", "correct": false },
+      { "text": "DELETE", "correct": false },
+      { "text": "PATCH", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTTP method is used to update a resource partially?",
+    "answers": [
+      { "text": "PATCH", "correct": true },
+      { "text": "PUT", "correct": false },
+      { "text": "UPDATE", "correct": false },
+      { "text": "MODIFY", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTTP method is considered idempotent and is used to completely replace a resource?",
+    "answers": [
+      { "text": "PUT", "correct": true },
+      { "text": "PATCH", "correct": false },
+      { "text": "POST", "correct": false },
+      { "text": "GET", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTTP method is used to delete a resource on the server?",
+    "answers": [
+      { "text": "DELETE", "correct": true },
+      { "text": "REMOVE", "correct": false },
+      { "text": "POST", "correct": false },
+      { "text": "DESTROY", "correct": false }
+    ]
+  },
+  {
     "question": "What is the purpose of the 'alt' attribute in an <img> tag?",
     "answers": [
       { "text": "To provide alternative text for an image", "correct": true },
@@ -601,6 +781,320 @@
         "text": "<tr>",
         "correct": false
       }
+    ]
+  },
+  {
+    "question": "Which HTML tag is used to define a table row?",
+    "answers": [
+      { "text": "<tr>", "correct": true },
+      { "text": "<td>", "correct": false },
+      { "text": "<th>", "correct": false },
+      { "text": "<row>", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the 'z-index' property in CSS control?",
+    "answers": [
+      { "text": "The stack order of elements", "correct": true },
+      { "text": "The size of an element", "correct": false },
+      { "text": "The visibility of an element", "correct": false },
+      { "text": "The spacing between elements", "correct": false }
+    ]
+  },
+  {
+    "question": "Which HTML attribute is used to specify an alternate text for an image?",
+    "answers": [
+      { "text": "alt", "correct": true },
+      { "text": "src", "correct": false },
+      { "text": "title", "correct": false },
+      { "text": "description", "correct": false }
+    ]
+  },
+  {
+      "question": "Which HTML attribute specifies the destination of a link?",
+      "answers": [
+        { "text": "href", "correct": true },
+        { "text": "src", "correct": false },
+        { "text": "link", "correct": false },
+        { "text": "url", "correct": false }
+      ]
+    },
+  {
+    "question": "Which CSS property is used to change the font of an element?",
+    "answers": [
+      { "text": "font-family", "correct": true },
+      { "text": "font-style", "correct": false },
+      { "text": "text-font", "correct": false },
+      { "text": "font", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you create a checkbox in HTML?",
+    "answers": [
+      { "text": "<input type='checkbox'>", "correct": true },
+      { "text": "<checkbox>", "correct": false },
+      { "text": "<input checkbox='true'>", "correct": false },
+      { "text": "<input type='box'>", "correct": false }
+    ]
+  },
+  {
+    "question": "Which CSS property is used to create space between an element’s border and its content?",
+    "answers": [
+      { "text": "padding", "correct": true },
+      { "text": "margin", "correct": false },
+      { "text": "border-spacing", "correct": false },
+      { "text": "content-spacing", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the difference between 'relative' and 'absolute' positioning in CSS?",
+    "answers": [
+      { "text": "'relative' positions the element relative to its normal position, 'absolute' positions it relative to the nearest positioned ancestor.", "correct": true },
+      { "text": "'absolute' positions the element based on the viewport, 'relative' uses the nearest parent element.", "correct": false },
+      { "text": "'relative' hides the element, while 'absolute' makes it float.", "correct": false },
+      { "text": "'relative' and 'absolute' have the same effect.", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the <meta> tag in HTML?",
+    "answers": [
+      { "text": "To define metadata such as character set, viewport settings, and SEO information.", "correct": true },
+      { "text": "To add scripts to the page.", "correct": false },
+      { "text": "To link CSS files.", "correct": false },
+      { "text": "To create a header section.", "correct": false }
+    ]
+  },
+  {
+    "question": "Which pseudo-class is used to style an element when the user hovers over it?",
+    "answers": [
+      { "text": ":hover", "correct": true },
+      { "text": ":focus", "correct": false },
+      { "text": ":active", "correct": false },
+      { "text": ":link", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is used to make a list with bullet points in HTML?",
+    "answers": [
+      { "text": "<ul>", "correct": true },
+      { "text": "<ol>", "correct": false },
+      { "text": "<li>", "correct": false },
+      { "text": "<list>", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you declare an empty array in JavaScript?",
+    "answers": [
+      { "text": "let arr = [];", "correct": true },
+      { "text": "let arr = {};", "correct": false },
+      { "text": "let arr = ();", "correct": false },
+      { "text": "let arr = new Object();", "correct": false }
+    ]
+  },
+  {
+    "question": "Which method adds an element to the end of a JavaScript array?",
+    "answers": [
+      { "text": "push()", "correct": true },
+      { "text": "pop()", "correct": false },
+      { "text": "shift()", "correct": false },
+      { "text": "unshift()", "correct": false }
+    ]
+  },
+  {
+    "question": "What will 'arr.length' return in JavaScript?",
+    "answers": [
+      { "text": "The total number of elements in the array", "correct": true },
+      { "text": "The last index of the array", "correct": false },
+      { "text": "The sum of all elements", "correct": false },
+      { "text": "The data type of the array", "correct": false }
+    ]
+  },
+  {
+    "question": "Which loop is best suited when the number of iterations is known?",
+    "answers": [
+      { "text": "for loop", "correct": true },
+      { "text": "while loop", "correct": false },
+      { "text": "do-while loop", "correct": false },
+      { "text": "forEach loop", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be the output of the following code?\n\nlet arr = [1, 2, 3];\narr.pop();\nconsole.log(arr);",
+    "answers": [
+      { "text": "[1, 2]", "correct": true },
+      { "text": "[1, 2, 3]", "correct": false },
+      { "text": "[2, 3]", "correct": false },
+      { "text": "[1, 3]", "correct": false }
+    ]
+  },
+  {
+    "question": "Which JavaScript loop ensures that the code block runs at least once?",
+    "answers": [
+      { "text": "do-while", "correct": true },
+      { "text": "for", "correct": false },
+      { "text": "while", "correct": false },
+      { "text": "forEach", "correct": false }
+    ]
+  },
+  {
+    "question": "Which method removes the first element from an array and returns it?",
+    "answers": [
+      { "text": "shift()", "correct": true },
+      { "text": "pop()", "correct": false },
+      { "text": "splice(0, 1)", "correct": false },
+      { "text": "slice(1)", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be logged to the console?\n\nlet arr = [1, 2, 3];\narr.unshift(0);\nconsole.log(arr);",
+    "answers": [
+      { "text": "[0, 1, 2, 3]", "correct": true },
+      { "text": "[1, 2, 3, 0]", "correct": false },
+      { "text": "[0, 2, 3]", "correct": false },
+      { "text": "[1, 2, 3]", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following loops is used to iterate over an array in JavaScript?",
+    "answers": [
+      { "text": "forEach()", "correct": true },
+      { "text": "do-while", "correct": false },
+      { "text": "switch-case", "correct": false },
+      { "text": "goto", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be the output of the following JavaScript code?\n\nlet arr = [10, 20, 30];\narr.splice(1, 1);\nconsole.log(arr);",
+    "answers": [
+      { "text": "[10, 30]", "correct": true },
+      { "text": "[10, 20, 30]", "correct": false },
+      { "text": "[20, 30]", "correct": false },
+      { "text": "[10, 20]", "correct": false }
+    ]
+  },{
+    "question": "What is the primary purpose of asynchronous JavaScript?",
+    "answers": [
+      { "text": "To prevent blocking the execution thread", "correct": true },
+      { "text": "To execute functions in a fixed order", "correct": false },
+      { "text": "To run all functions at the same time", "correct": false },
+      { "text": "To disable synchronous execution", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a way to handle asynchronous operations in JavaScript?",
+    "answers": [
+      { "text": "forEach loop", "correct": true },
+      { "text": "Callbacks", "correct": false },
+      { "text": "Promises", "correct": false },
+      { "text": "Async/Await", "correct": false }
+    ]
+  },
+  {
+    "question": "Which object is used to handle asynchronous operations in JavaScript?",
+    "answers": [
+      { "text": "Promise", "correct": true },
+      { "text": "Observable", "correct": false },
+      { "text": "Event Loop", "correct": false },
+      { "text": "AsyncFunction", "correct": false }
+    ]
+  },
+  {
+    "question": "What will the following code output?\n\nconsole.log('A');\nsetTimeout(() => console.log('B'), 1000);\nconsole.log('C');",
+    "answers": [
+      { "text": "A C B", "correct": true },
+      { "text": "A B C", "correct": false },
+      { "text": "B A C", "correct": false },
+      { "text": "C A B", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you create a JavaScript promise?",
+    "answers": [
+      { "text": "new Promise((resolve, reject) => {...})", "correct": true },
+      { "text": "Promise.create((resolve, reject) => {...})", "correct": false },
+      { "text": "async function() {...}", "correct": false },
+      { "text": "setTimeout(() => {...}, 1000)", "correct": false }
+    ]
+  },
+  {
+    "question": "Which method is used to handle the result of a Promise?",
+    "answers": [
+      { "text": ".then()", "correct": true },
+      { "text": ".catch()", "correct": false },
+      { "text": ".resolve()", "correct": false },
+      { "text": ".finally()", "correct": false }
+    ]
+  },
+  {
+    "question": "What keyword is used to define an asynchronous function in JavaScript?",
+    "answers": [
+      { "text": "async", "correct": true },
+      { "text": "await", "correct": false },
+      { "text": "setTimeout", "correct": false },
+      { "text": "defer", "correct": false }
+    ]
+  },
+  {
+    "question": "What does the 'await' keyword do in an async function?",
+    "answers": [
+      { "text": "Pauses execution until the promise resolves", "correct": true },
+      { "text": "Creates a new Promise", "correct": false },
+      { "text": "Rejects a promise immediately", "correct": false },
+      { "text": "Executes code asynchronously", "correct": false }
+    ]
+  },
+  {
+    "question": "Which of the following will correctly handle an error in a Promise chain?",
+    "answers": [
+      { "text": "promise.catch(error => console.log(error))", "correct": true },
+      { "text": "promise.then(error => console.log(error))", "correct": false },
+      { "text": "promise.error(error => console.log(error))", "correct": false },
+      { "text": "promise.finally(error => console.log(error))", "correct": false }
+    ]
+  },
+  {
+    "question": "What will be logged to the console?\n\nasync function test() {\n  return 'Hello';\n}\nconsole.log(test());",
+    "answers": [
+      { "text": "Promise {<resolved>: 'Hello'}", "correct": true },
+      { "text": "'Hello'", "correct": false },
+      { "text": "undefined", "correct": false },
+      { "text": "null", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you create a responsive layout in CSS?",
+    "answers": [
+      { "text": "Using grid, media queries and flex", "correct": true },
+      { "text": "Using inline styles and flex", "correct": false },
+      { "text": "Using absolute positioning", "correct": false },
+      { "text": "Using <responsive> tags in HTML", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the purpose of the 'float' property in CSS?",
+    "answers": [
+      { "text": "To position elements to the left or right within their container", "correct": true },
+      { "text": "To make an element responsive", "correct": false },
+      { "text": "To add padding to an element", "correct": false },
+      { "text": "To set the stacking order of elements", "correct": false }
+    ]
+  },
+  {
+    "question": "What is the difference between 'id' and 'class' attributes in HTML?",
+    "answers": [
+      { "text": "'id' is unique to an element, while 'class' can be shared among multiple elements.", "correct": true },
+      { "text": "'id' is used for styling, while 'class' is used for scripts.", "correct": false },
+      { "text": "'id' is for HTML, while 'class' is for CSS.", "correct": false },
+      { "text": "'id' is only for inline elements, while 'class' is for block elements.", "correct": false }
+    ]
+  },
+  {
+    "question": "How do you define a grid container in CSS?",
+    "answers": [
+      { "text": "display: grid;", "correct": true },
+      { "text": "grid: display;", "correct": false },
+      { "text": "container: grid;", "correct": false },
+      { "text": "display: grid-container;", "correct": false }
     ]
   },
   {

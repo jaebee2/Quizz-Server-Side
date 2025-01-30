@@ -44,7 +44,7 @@ async function loadQuestions() {
   try {
     const response = await fetch('questions.json'); // Fetch the JSON file
     const allQuestions = await response.json();
-    shuffledQuestions = allQuestions.sort(() => Math.random() - 0.5).slice(0, 2); // Shuffle and select 10 questions
+    shuffledQuestions = allQuestions.sort(() => Math.random() - 0.5).slice(0, 25); 
   } catch (error) {
     console.error('Error fetching questions:', error);
   }
@@ -199,10 +199,10 @@ async function saveHighScore(name, score, percentage) {
   highScores.push({ name, score, percentage });
   highScores.sort((a, b) => b.score - a.score);
   localStorage.setItem('highScores', JSON.stringify(highScores));
-  const package = {highScores}
+  const package = {name, score, percentage}
   const options = {
     method : 'POST',
-    header : {
+    headers : {
       'Content-Type' : 'application/json'
     },
     body:JSON.stringify(package)
