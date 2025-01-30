@@ -1,3 +1,4 @@
+
 // Get the DOM elements
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
@@ -43,7 +44,7 @@ async function loadQuestions() {
   try {
     const response = await fetch('questions.json'); // Fetch the JSON file
     const allQuestions = await response.json();
-    shuffledQuestions = allQuestions.sort(() => Math.random() - 0.5).slice(0, 15); // Shuffle and select 10 questions
+    shuffledQuestions = allQuestions.sort(() => Math.random() - 0.5).slice(0, 2); // Shuffle and select 10 questions
   } catch (error) {
     console.error('Error fetching questions:', error);
   }
@@ -159,7 +160,7 @@ function handleTimeExpired() {
 }
 
 // Display the results and feedback
-function displayResults() {
+async function displayResults() {
   questionContainerElement.classList.add('hide');
   resultContainer.classList.remove('hide');
 
@@ -193,11 +194,23 @@ function displayResults() {
 }
 
 // Save the high score to local storage
-function saveHighScore(name, score, percentage) {
+async function saveHighScore(name, score, percentage) {
   const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
   highScores.push({ name, score, percentage });
   highScores.sort((a, b) => b.score - a.score);
   localStorage.setItem('highScores', JSON.stringify(highScores));
+  const package = {highScores}
+  const options = {
+    method : 'POST',
+    header : {
+      'Content-Type' : 'application/json'
+    },
+    body:JSON.stringify(package)
+  }
+ const response = await fetch ('/quizz',options);
+ const data = await response.json()
+ console.log(data)
+
 }
 
 // Display the high scores

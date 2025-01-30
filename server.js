@@ -1,6 +1,20 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 500
-app.listen(port, () => console.log(`listening at ${port}`));
+
+
 app.use(express.static('ihifix')); 
-require('dotenv').config();
+
+
+app.use(express.json({limit:'5mb'})); 
+app.listen(3000, () => console.log('listening at 3000'));
+
+
+app.post('/quizz',(request, response)=>{
+    console.log('I have Recieved ')
+    const data = request.body
+    
+    response.json({
+        status:'done'
+    })
+
+})
